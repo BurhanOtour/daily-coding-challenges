@@ -1,0 +1,3 @@
+/Users/botour-pc/workspace/daily-coding-challenges/challenge1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/botour-pc/workspace/daily-coding-challenges/challenge1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/botour-pc/workspace/daily-coding-challenges/challenge1/cmake-build-debug/CMakeFiles/challenge1.dir
