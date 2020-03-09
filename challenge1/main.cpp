@@ -3,23 +3,15 @@
 
 void solveRek(int remainingSteps, std::vector<int> vector, int &variations);
 
-void solve(int N, std::vector<int> stepsSet, int &variations) {
-    for (int i = 0; i < stepsSet.size(); ++i) {
-        solveRek(N - stepsSet.at(i), stepsSet, variations);
-    }
-
-}
-
-void solveRek(int remainingSteps, std::vector<int> stepsSet, int &variations) {
-    if (remainingSteps == 0) {
-        variations++;
-    } else if (remainingSteps > 0) {
-        for (int i = 0; i <stepsSet.size(); ++i) {
-            solveRek(remainingSteps - stepsSet.at(i), stepsSet, variations);
+void solve(int N, std::vector<int> const &stepsSet, int &variations) {
+    if (N > 0) {
+        for (int i = 0; i < stepsSet.size(); ++i) {
+            solve(N - stepsSet.at(i), stepsSet, variations);
         }
+    } else if (N == 0) {
+        variations++;
     }
-
-};
+}
 
 int main() {
     int variations = 0;
